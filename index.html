@@ -1,20 +1,39 @@
 ---
-layout: page
-title: "Welcome"
+layout: default_clean
+title: ""
 permalink: /
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+<div class="section section-1">
+  <div class="text">
+    <h2>Sugars in disease</h2>
+    <p>Sugars cover most proteins and and dictate how the immune system interacts with cells and fibres. </p>
+  </div>
+  <div class="image">
+    <img src="/images/image1.png" alt="Biotech Lab">
+  </div>
 </div>
+
+<div class="section section-2">
+  <div class="animation">
+    <img src="/images/website.gif" alt="Scientific Animation" loop autoplay>
+  </div>
+  <div class="text">
+    <h2>Small molecule targeting of sugars</h2>
+    <p>We are using ML approaches to model how sugars are processed by cells. This allows us to design synthetic monosaccharides which modify previously untargettable sugars. </p>
+  </div>
+</div>
+
+<footer id="contact-footer" class="contact-footer">
+  <div class="person">
+    <p>Marcos Burger Ramos</p>
+    <a href="mailto:{{ site.marcos_email }}"><i class="fas fa-envelope"></i></a>
+    <a href="{{ site.marcos_linkedin }}"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <div class="person">
+    <p>Sophie James</p>
+    <a href="mailto:{{ site.sophie_email }}"><i class="fas fa-envelope"></i></a>
+    <a href="{{ site.sophie_linkedin }}"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
